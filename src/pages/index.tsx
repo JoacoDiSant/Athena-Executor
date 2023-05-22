@@ -1,15 +1,13 @@
 import Head from 'next/head';
-import { Inter } from 'next/font/google';
-import App from '@/Components';
 
-const inter = Inter({ subsets: ['latin'] });
+import App from '@/Components';
 
 export default function Home() {
   return (
     <>
       <Head>
         <title>Inicio</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
       <main>
         <App />

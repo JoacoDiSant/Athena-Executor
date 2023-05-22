@@ -1,0 +1,68 @@
+.name_logo_container {
+  width: 100%;
+  height: 100%;
+}
+.name_logo_typography {
+  width: 100px;
+  font-size: 25px;
+  font-weight: 700;
+  color: black;
+  line-height: 22px;
+  padding: 13px;
+}
+
+/* Mobil S */
+@media (min-width: 320px) and (max-width: 768px) {
+  .name_logo_typography {
+    width: 100px;
+    font-size: 10px;
+    font-weight: 700;
+    color: black;
+    line-height: 22px;
+    padding: 13px;
+  }
+}
+/* Mobil M */
+@media (min-width: 375px) and (max-width: 768px) {
+  .name_logo_typography {
+    width: 100px;
+    font-size: 10px;
+    font-weight: 700;
+    color: black;
+    line-height: 22px;
+    padding: 13px;
+  }
+}
+/* Mobil L */
+@media (min-width: 425px) and (max-width: 768px) {
+  .name_logo_typography {
+    width: 100px;
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+    line-height: 22px;
+    padding: 13px;
+  }
+}
+/* Tablet  */
+@media (min-width: 701px) and (max-width: 1120px) {
+  .name_logo_typography {
+    width: 100px;
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    line-height: 22px;
+    padding: 13px;
+  }
+}
+/* Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+  .name_logo_typography {
+    width: 100px;
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+    line-height: 22px;
+    padding: 13px;
+  }
+}
