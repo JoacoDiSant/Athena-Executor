@@ -1,0 +1,12 @@
+.actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.actions_fonts {
+  color: black;
+  margin-top: 20px;
+  font-weight: 400;
+}
