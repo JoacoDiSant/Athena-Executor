@@ -1,49 +1,39 @@
-import { Button } from 'antd';
+// import { Button } from 'antd';
 import React from 'react';
+import MediaQuery from 'react-responsive';
 
 function NavTabs() {
   return (
+    // <div>
+    //   <Button>
+    //     <a href="#home">Inicio</a>
+    //   </Button>
+    //   <Button>
+    //     <a href="#about">Servicios</a>
+    //   </Button>
+    //   <Button>
+    //     <a href="#services">Quienes Somos</a>
+    //   </Button>
+    //   <Button>
+    //     <a href="#contact">Contacto</a>
+    //   </Button>
+    // </div>
     <div>
-      <Button>
-        <a href="#home">Inicio</a>
-      </Button>
-      <Button>
-        <a href="#about">Servicios</a>
-      </Button>
-      <Button>
-        <a href="#services">Quienes Somos</a>
-      </Button>
-      <Button>
-        <a href="#contact">Contacto</a>
-      </Button>
+      <h1>Device Test!</h1>
+      <MediaQuery minWidth={1224}>
+        <p>You are a desktop or laptop</p>
+        <MediaQuery minWidth={1824}>
+          <p>You also have a huge screen</p>
+        </MediaQuery>
+      </MediaQuery>
+      <MediaQuery minResolution="2dppx">
+        {/* You can also use a function (render prop) as a child */}
+        {(matches) =>
+          matches ? <p>You are retina</p> : <p>You are not retina</p>
+        }
+      </MediaQuery>
     </div>
   );
 }
 
 export default NavTabs;
-
-/*
- * TODO: instalar esto npm install react-responsive
-
-  para hacer esto
-
-  import React from 'react';
-  import { MediaQuery } from 'react-responsive';
-
-  const MyComponent = () => {
-    return (
-      <div>
-        <MediaQuery maxWidth={767}>
-          <div>Elemento para móviles</div>
-        </MediaQuery>
-        <MediaQuery minWidth={768}>
-          <div>Elemento para escritorio</div>
-        </MediaQuery>
-      </div>
-    );
-  };
-
-  export default MyComponent;
-
-
- */
