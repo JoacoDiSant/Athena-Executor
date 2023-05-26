@@ -25,9 +25,6 @@ function Headers() {
         <div className={styles.header_container_body}>
           <NavTabs />
         </div>
-        <div className={styles.header_container_body}>
-          <p>+ 54 9 223 4476914</p>
-        </div>
       </div>
     </Header>
   );

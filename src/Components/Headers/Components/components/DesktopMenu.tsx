@@ -17,6 +17,9 @@ function DesktopMenu() {
       <a className={styles.actions_fonts} href="#ContactUs">
         Contacto
       </a>
+      <div className={styles.header_container_body}>
+        <p>+ 54 9 223 4476914</p>
+      </div>
     </div>
   );
 }

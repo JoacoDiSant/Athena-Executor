@@ -14,25 +14,44 @@ function MobileMenu() {
     setOpen(!open);
   };
 
+  const containerStyle: React.CSSProperties = {
+    position: 'relative',
+    padding: 48,
+    overflow: 'hidden',
+    textAlign: 'center',
+    background: 'transparent',
+    top: '14.8vw',
+    right: '406px',
+    width: '99.6vw',
+    height: '94vh',
+  };
+
   return (
     <div className={styles.box}>
-      <div className="NavBar-Container">
-        <div className="NavBar">
-          <div className="containerIcon">
-            <div
-              aria-hidden="true"
-              className={`${styles.btn} ${
-                open ? styles.active : styles.notActive
-              }`}
-              onClick={showDrawer}
-            >
-              <span className={styles.span} />
-              <span className={styles.span} />
-              <span className={styles.span} />
-            </div>
+      <div className="NavBar">
+        <div className="containerIcon">
+          <div
+            aria-hidden="true"
+            className={`${styles.btn} ${
+              open ? styles.active : styles.notActive
+            }`}
+            onClick={showDrawer}
+          >
+            <span className={styles.span} />
+            <span className={styles.span} />
+            <span className={styles.span} />
           </div>
         </div>
-        <Drawer onClose={onClose} open={open} placement="right" width="30%">
+      </div>
+      <div className="NavBar-Container" style={containerStyle}>
+        <Drawer
+          closable={false}
+          getContainer={false}
+          onClose={onClose}
+          open={open}
+          placement="right"
+          width="45%"
+        >
           <div className={styles.actions}>
             <a className={styles.actions_fonts} href="#Home" onClick={onClose}>
               Inicio
@@ -58,6 +77,7 @@ function MobileMenu() {
             >
               Contacto
             </a>
+            <p>+ 54 9 223 4476914</p>
           </div>
         </Drawer>
       </div>
