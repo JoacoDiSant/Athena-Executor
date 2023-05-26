@@ -21,7 +21,7 @@ function MobileMenu() {
     textAlign: 'center',
     background: 'transparent',
     top: '14.8vw',
-    right: '406px',
+    right: '320px',
     width: '99.6vw',
     height: '94vh',
   };
