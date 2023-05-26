@@ -24,6 +24,7 @@ function MobileMenu() {
     right: '406px',
     width: '99.6vw',
     height: '94vh',
+    border: 'none',
   };
 
   return (
