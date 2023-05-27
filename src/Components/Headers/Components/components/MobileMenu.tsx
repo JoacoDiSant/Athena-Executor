@@ -20,11 +20,12 @@ function MobileMenu() {
     overflow: 'hidden',
     textAlign: 'center',
     background: 'transparent',
-    top: '14.8vw',
-    right: '406px',
-    width: '99.6vw',
-    height: '94vh',
+    top: '13vw',
+    left: '-466.4px',
+    width: '99.8vw',
+    height: '100vh',
     border: 'none',
+    visibility: open ? 'visible' : 'hidden',
   };
 
   return (

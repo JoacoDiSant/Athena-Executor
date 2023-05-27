@@ -1,14 +1,11 @@
 .main {
   height: 100vh;
   width: 100vw;
-}
-
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-}
-
-/* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
+  background: url('../images/Logo.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #ffe408;
 }
 
 @keyframes rotate {
