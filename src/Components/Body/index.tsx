@@ -76,14 +76,14 @@ function Body() {
           <div className={`Third-Block-Text ${styles.body_Third_block_text}`}>
             <h1
               style={{
-                fontSize: '20px',
+                fontSize: '30px',
               }}
             >
               QUIENES SOMOS?
             </h1>
             <p
               style={{
-                fontSize: '18px',
+                fontSize: '14px',
               }}
             >
               Mi nombre es Tomás Rey Mendez, soy Cerrajero particular con
