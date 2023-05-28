@@ -3,6 +3,7 @@ import React from 'react';
 import styles from '../styles/Home.module.css';
 import Headers from './Headers';
 import Body from './Body';
+import Footer from './Footers';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <Body />
       </div>
       <div className="Footer">
-        <h1>Footer</h1>
+        <Footer />
       </div>
     </div>
   );
