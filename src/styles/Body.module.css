@@ -4,8 +4,8 @@
 }
 .body_first_block {
   background: url('../images/DoorCheck.jpg') no-repeat content-box;
-  background-position-x: 60%;
-  background-size: 100%;
+  background-position-x: 50%;
+  background-size: 160%;
   height: 35vh;
   display: flex;
   margin-bottom: 70px;
@@ -30,7 +30,7 @@
 .body_second_block {
   background: url('../images/ServiceBG.jpg') no-repeat content-box;
   background-position-x: 50%;
-  background-size: 110%;
+  background-size: cover;
   height: max-content;
   display: flex;
   margin-bottom: 70px;
