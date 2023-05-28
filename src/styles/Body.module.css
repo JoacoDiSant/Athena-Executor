@@ -101,8 +101,8 @@
 .body_Third_block_container {
   background: url('../images/BGQUIENSOY.jpg') no-repeat content-box;
   background-position: center;
-  background-size: 720px;
-  height: 29vh;
+  background-size: cover;
+  height: 42vh;
   display: flex;
   margin-bottom: 100px;
 }
