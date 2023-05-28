@@ -98,6 +98,37 @@ function Body() {
           </div>
         </div>
       </div>
+      <div className={`Four-Block ${styles.body_four_block}`}>
+        <div className={`Four-Block-Text ${styles.body_four_block_text}`}>
+          <div>
+            <h1
+              style={{
+                fontSize: '16px',
+                paddingLeft: '12px',
+              }}
+            >
+              CONTACTO 24/7
+            </h1>
+          </div>
+          <div className={styles.div_container_p}>
+            <span>
+              <p className={`${styles.p} ${styles.title}`}>TELÉFONO 24/7</p>
+              <br />
+              <p className={styles.p}>+ 54 9 2234476914</p>
+              <br />
+              <p className={`${styles.p} ${styles.title}`}> EMAIL</p>
+              <br />
+              <p className={styles.p}>REYMENDEZSEGURIDAD@GMAIL.COM</p>
+              <br />
+              <p className={`${styles.p} ${styles.title}`}>ÁREAS DE SERVICIO</p>
+              <br />
+              <p className={styles.p}>
+                Mar del Plata, Buenos Aires, Argentina.
+              </p>
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
