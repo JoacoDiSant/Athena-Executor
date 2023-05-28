@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from 'react';
 import { Form, Input, Button } from 'antd';
 
