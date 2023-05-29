@@ -22,6 +22,7 @@ function Body() {
               style={{
                 backgroundColor: '#ffe408',
                 color: '#000000',
+                fontFamily: 'Agrandir-Wide',
               }}
             >
               <PhoneOutlined

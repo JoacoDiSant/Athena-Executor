@@ -20,6 +20,7 @@
   line-height: 2.2;
   color: black;
   animation: FontAnim 2.5s ease 0s 1 normal forwards;
+  font-family: 'Agrandir-Wide';
 }
 
 .span {
@@ -44,6 +45,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  font-family: 'Agrandir-Wide';
 }
 
 @keyframes FontAnim {
@@ -65,6 +67,7 @@
   column-gap: 20px;
   align-items: center;
   padding: 11px;
+  font-family: 'Agrandir-Wide';
 }
 
 .image1 {
@@ -96,6 +99,7 @@
 
 .textLi {
   font-size: 12px;
+  font-family: 'Agrandir-Wide';
 }
 
 .body_Third_block_container {
@@ -104,7 +108,7 @@
   background-size: cover;
   height: 42vh;
   display: flex;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 
 .body_Third_block {
@@ -120,12 +124,14 @@
   height: 85%;
   color: white;
   text-align: center;
+  font-family: 'Agrandir-Wide';
 }
 
 .body_four_block {
   background: url('../images/horarios.jpg');
   background-position: center;
   background-size: cover;
+  margin-bottom: 70px;
 }
 
 .body_four_block_text {
