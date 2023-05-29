@@ -2,7 +2,6 @@ import React from 'react';
 import { Layout } from 'antd';
 
 import styles from '../../styles/Header.module.css';
-import NavTabs from './Components/NavTabs';
 
 const { Header } = Layout;
 
@@ -21,9 +20,6 @@ function Headers() {
       <div className={styles.name_logo_container}>
         <div className={styles.header_container_body_name}>
           <h1 className={styles.name_logo_typography}>REYMENDEZ SEGURIDAD</h1>
-        </div>
-        <div className={styles.header_container_body}>
-          <NavTabs />
         </div>
       </div>
     </Header>

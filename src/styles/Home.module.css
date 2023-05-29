@@ -12,6 +12,11 @@
   background: url('../images/FooterBG.jpg');
 }
 
+.header {
+  display: flex;
+  align-items: center;
+}
+
 @keyframes rotate {
   from {
     transform: rotate(360deg);
