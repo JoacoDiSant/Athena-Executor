@@ -16,7 +16,7 @@ const onFinishFailed = (errorInfo: any) => {
 function Footer() {
   return (
     <div className={styles.footer_container}>
-      <h1>PIDE UN PRESUPUESTO!</h1>
+      <h1 className={styles.title}>PIDE UN PRESUPUESTO!</h1>
       <Form
         autoComplete="off"
         initialValues={{ remember: true }}
@@ -24,23 +24,23 @@ function Footer() {
         name="basic"
         onFinish={onFinish}
         onFinishFailed={onFinishFailed}
-        style={{ maxWidth: 600 }}
+        style={{ maxWidth: 600, color: 'white' }}
         wrapperCol={{ span: 16 }}
       >
-        <Form.Item label="Nombre" name="name">
-          <Input />
+        <Form.Item name="name">
+          <Input placeholder="Nombre" />
         </Form.Item>
 
-        <Form.Item label="Email" name="email">
-          <Input />
+        <Form.Item name="email">
+          <Input placeholder="Email" />
         </Form.Item>
 
-        <Form.Item label="Asunto" name="issue">
-          <Input />
+        <Form.Item name="issue">
+          <Input placeholder="Asunto" />
         </Form.Item>
 
-        <Form.Item label="Mensaje" name="Text">
-          <Input.TextArea />
+        <Form.Item name="Text">
+          <Input.TextArea placeholder="Mensaje" />
         </Form.Item>
 
         <Form.Item wrapperCol={{ offset: 8, span: 16 }}>

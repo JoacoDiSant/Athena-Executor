@@ -1,10 +1,15 @@
 .main {
   width: 100vw;
   background: url('../images/Logo.png') no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: 70%;
+  background-position-y: 30%;
+  background-position-x: 50%;
   background-attachment: fixed;
   background-color: #ffe408;
+}
+
+.footer {
+  background: url('../images/FooterBG.jpg');
 }
 
 @keyframes rotate {

@@ -1,4 +1,15 @@
 .footer_container {
-  background: url('../images/FooterBG.jpg');
   font-family: 'Agrandir-Wide';
+  background-color: rgb(0 0 0 / 20%);
+  color: white;
+  height: 49vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.title {
+  font-size: 28px;
+  padding-bottom: 51px;
 }

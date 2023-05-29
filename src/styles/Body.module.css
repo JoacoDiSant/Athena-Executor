@@ -8,7 +8,7 @@
   background-size: 160%;
   height: 35vh;
   display: flex;
-  margin-bottom: 70px;
+  margin-bottom: 100px;
   margin-top: 20px;
 }
 
@@ -34,7 +34,7 @@
   background-size: cover;
   height: max-content;
   display: flex;
-  margin-bottom: 70px;
+  margin-bottom: 100px;
 }
 
 .body_second_block_text {
@@ -108,7 +108,7 @@
   background-size: cover;
   height: 42vh;
   display: flex;
-  margin-bottom: 70px;
+  margin-bottom: 100px;
 }
 
 .body_Third_block {
@@ -131,7 +131,7 @@
   background: url('../images/horarios.jpg');
   background-position: center;
   background-size: cover;
-  margin-bottom: 70px;
+  margin-bottom: 100px;
 }
 
 .body_four_block_text {

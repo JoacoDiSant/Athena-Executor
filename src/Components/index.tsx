@@ -14,7 +14,7 @@ function App() {
       <div className="Body">
         <Body />
       </div>
-      <div className="Footer">
+      <div className={`Footer ${styles.footer}`}>
         <Footer />
       </div>
     </div>
