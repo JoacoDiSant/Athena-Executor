@@ -1,31 +1,50 @@
-/* eslint-disable no-console */
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from 'react';
-import { Form, Input, Button } from 'antd';
+import { Form, Input, Button, Alert, Space } from 'antd';
+import emailjs from '@emailjs/browser';
 
 import styles from '../../styles/Footer.module.css';
 
-const onFinish = (values: any) => {
-  console.log('Success:', values);
-};
-
-const onFinishFailed = (errorInfo: any) => {
-  console.log('Failed:', errorInfo);
-};
+interface IParamsForm {
+  name: string;
+  email: string;
+  issue: string;
+  text: string;
+}
 
 function Footer() {
+  const [onSuccess, setOnSuccess] = React.useState(false);
+
+  const publicKey = process.env.NEXT_PUBLIC_PUBLICK_KEY as string;
+  const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID as string;
+  const templeteId = process.env.NEXT_PUBLIC_TEMPLATE_ID as string;
+
+  const sendEmail = (e: any) => {
+    console.log('👽 ~ e:', e);
+    e.preventDefault();
+    emailjs
+      .send(
+        serviceId,
+        templeteId,
+        {
+          name: e.currentTarget.name,
+          email: e.currentTarget.email,
+          issue: e.currentTarget.issue,
+          text: e.currentTarget.text,
+        },
+        publicKey,
+      )
+      .then(
+        () => setOnSuccess(true),
+        () => setOnSuccess(false),
+      );
+  };
   return (
     <div className={styles.footer_container}>
       <h1 className={styles.title}>PIDE UN PRESUPUESTO!</h1>
-      <Form
-        autoComplete="off"
-        initialValues={{ remember: true }}
-        labelCol={{ span: 8 }}
-        name="basic"
-        onFinish={onFinish}
-        onFinishFailed={onFinishFailed}
+      <form
+        name="form_submit"
+        onSubmit={sendEmail}
         style={{ maxWidth: 600, color: 'white' }}
-        wrapperCol={{ span: 16 }}
       >
         <Form.Item name="name">
           <Input placeholder="Nombre" />
@@ -39,7 +58,7 @@ function Footer() {
           <Input placeholder="Asunto" />
         </Form.Item>
 
-        <Form.Item name="Text">
+        <Form.Item name="text">
           <Input.TextArea placeholder="Mensaje" />
         </Form.Item>
 
@@ -48,7 +67,20 @@ function Footer() {
             Submit
           </Button>
         </Form.Item>
-      </Form>
+      </form>
+      {onSuccess ? (
+        <Space direction="vertical">
+          <Alert
+            message="Se envio el mail exitosamente"
+            type="success"
+            showIcon
+          />
+        </Space>
+      ) : (
+        <Space direction="vertical">
+          <Alert message="Error al enviar el Mail" type="error" showIcon />
+        </Space>
+      )}
     </div>
   );
 }
