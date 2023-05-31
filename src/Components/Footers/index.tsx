@@ -1,10 +1,11 @@
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 import React from 'react';
 import { Form, Input, Button, Alert, Space } from 'antd';
 import emailjs from '@emailjs/browser';
 
 import styles from '../../styles/Footer.module.css';
 
-interface IParamsForm {
+interface IForm {
   name: string;
   email: string;
   issue: string;
@@ -12,53 +13,59 @@ interface IParamsForm {
 }
 
 function Footer() {
+  const [form] = Form.useForm();
   const [onSuccess, setOnSuccess] = React.useState(false);
 
   const publicKey = process.env.NEXT_PUBLIC_PUBLICK_KEY as string;
   const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID as string;
   const templeteId = process.env.NEXT_PUBLIC_TEMPLATE_ID as string;
 
-  const sendEmail = (e: any) => {
-    console.log('👽 ~ e:', e);
-    e.preventDefault();
+  const sendEmail = (e: IForm) => {
     emailjs
       .send(
         serviceId,
         templeteId,
         {
-          name: e.currentTarget.name,
-          email: e.currentTarget.email,
-          issue: e.currentTarget.issue,
-          text: e.currentTarget.text,
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+          // @ts-ignore
+          from_name: e.name,
+          to_name: 'Joaquin', // TODO: CAMBIAR POR EL NOMBRE DE LA EMPRESA y por el mail reymendezseguridad@gmail.com
+          from_email: e.email,
+          from_issue: e.issue,
+          message: e.text,
         },
         publicKey,
       )
       .then(
-        () => setOnSuccess(true),
+        () => {
+          setOnSuccess(true);
+          form.resetFields();
+        },
         () => setOnSuccess(false),
       );
   };
+
   return (
     <div className={styles.footer_container}>
       <h1 className={styles.title}>PIDE UN PRESUPUESTO!</h1>
-      <form
-        name="form_submit"
-        onSubmit={sendEmail}
+      <Form
+        form={form}
+        onFinish={sendEmail}
         style={{ maxWidth: 600, color: 'white' }}
       >
-        <Form.Item name="name">
+        <Form.Item name="name" rules={[{ required: true }]}>
           <Input placeholder="Nombre" />
         </Form.Item>
 
-        <Form.Item name="email">
+        <Form.Item name="email" rules={[{ type: 'email', required: true }]}>
           <Input placeholder="Email" />
         </Form.Item>
 
-        <Form.Item name="issue">
+        <Form.Item name="issue" rules={[{ required: true }]}>
           <Input placeholder="Asunto" />
         </Form.Item>
 
-        <Form.Item name="text">
+        <Form.Item name="text" rules={[{ required: true }]}>
           <Input.TextArea placeholder="Mensaje" />
         </Form.Item>
 
@@ -67,7 +74,7 @@ function Footer() {
             Submit
           </Button>
         </Form.Item>
-      </form>
+      </Form>
       {onSuccess ? (
         <Space direction="vertical">
           <Alert
@@ -77,9 +84,11 @@ function Footer() {
           />
         </Space>
       ) : (
-        <Space direction="vertical">
-          <Alert message="Error al enviar el Mail" type="error" showIcon />
-        </Space>
+        onSuccess && (
+          <Space direction="vertical">
+            <Alert message="Error al enviar el Mail" type="error" showIcon />
+          </Space>
+        )
       )}
     </div>
   );
