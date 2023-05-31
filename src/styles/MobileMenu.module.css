@@ -2,16 +2,18 @@
 .box {
   border-radius: 2px;
   position: absolute;
-  right: 20px;
+  left: 50%;
+  top: 57.8%;
   transform: translate(-50%, -50%);
-  width: 40px;
-  height: 40px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
 }
 
 .btn {
   position: absolute;
-  top: 100%;
-  left: 50%;
+  top: 3%;
+  right: 0;
   transform: translate(-50%, -50%);
   width: 40px;
   cursor: pointer;

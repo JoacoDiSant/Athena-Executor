@@ -8,11 +8,19 @@ const MobileMenu = dynamic(() => import('./components/MobileMenu'), {
 const DesktopMenu = dynamic(() => import('./components/DesktopMenu'), {
   ssr: false,
 });
+type Props = {
+  open: boolean;
+  setOpen: (value: boolean) => void;
+};
 
-function NavTabs() {
+function NavTabs({ open, setOpen }: Props) {
   const isBigScreen = useMediaQuery({ query: '(min-width: 1024px)' });
 
-  return isBigScreen ? <DesktopMenu /> : <MobileMenu />;
+  return isBigScreen ? (
+    <DesktopMenu />
+  ) : (
+    <MobileMenu open={open} setOpen={setOpen} />
+  );
 }
 
 export default memo(NavTabs);
