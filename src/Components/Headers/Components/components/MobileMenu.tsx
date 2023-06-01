@@ -27,8 +27,20 @@ function MobileMenu({ open, setOpen }: Props) {
     visibility: open ? 'visible' : 'hidden',
   };
 
+  const boxStyle: React.CSSProperties = {
+    borderRadius: '2px',
+    position: 'absolute',
+    width: open ? '100vw' : 0,
+    height: '100vh',
+    zIndex: 1,
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'flex-end',
+    top: '64px',
+  };
+
   return (
-    <div className={styles.box}>
+    <div className="ContainerBox" style={boxStyle}>
       <div className="NavBar-Container" style={containerStyle}>
         <Drawer
           closable={false}
