@@ -1,13 +1,16 @@
 import React from 'react';
 import { Button } from 'antd';
 import { PhoneOutlined } from '@ant-design/icons';
+import { useMediaQuery } from 'react-responsive';
 
 import styles from '../../styles/Body.module.css';
 
 function Body() {
+  const isTablet = useMediaQuery({ query: '(min-width: 768px)' });
+
   return (
     <div className={`Body-Container ${styles.body_container}`}>
-      <div className={`First-Block ${styles.body_first_block}`}>
+      <div className={`First-Block ${styles.body_first_block}`} id="home">
         <div className={`First-Block-Text ${styles.body_fisrt_block_text}`}>
           <p>
             URGENCIAS LAS 24 HORAS <br />
@@ -19,10 +22,13 @@ function Body() {
             }}
           >
             <Button
+              size={isTablet ? 'large' : 'middle'}
               style={{
                 backgroundColor: '#ffe408',
                 color: '#000000',
                 fontFamily: 'Agrandir-Wide',
+                width: isTablet ? '70%' : '160px',
+                fontSize: isTablet ? '20px' : '15px',
               }}
             >
               <PhoneOutlined
@@ -36,7 +42,7 @@ function Body() {
           </div>
         </div>
       </div>
-      <div className={`Second-Block ${styles.body_second_block}`}>
+      <div className={`Second-Block ${styles.body_second_block}`} id="Services">
         <div className={`First-Text ${styles.body_second_block_text}`}>
           <div className={`Second Text ${styles.body_first_text}`}>
             <span className={styles.image1} />
@@ -72,21 +78,12 @@ function Body() {
       </div>
       <div
         className={`Third-Block-container ${styles.body_Third_block_container}`}
+        id="WhoWeAre"
       >
         <div className={`Third-Block ${styles.body_Third_block}`}>
           <div className={`Third-Block-Text ${styles.body_Third_block_text}`}>
-            <h1
-              style={{
-                fontSize: '30px',
-              }}
-            >
-              QUIENES SOMOS?
-            </h1>
-            <p
-              style={{
-                fontSize: '14px',
-              }}
-            >
+            <h1 className={styles.whoWeAre}>QUIENES SOMOS?</h1>
+            <p className={styles.whoWeAreText}>
               Mi nombre es Tomás Rey Mendez, soy Cerrajero particular con
               disponibilidad de 24hs de servicio los 7 días de la semana.
               <br />
@@ -99,17 +96,10 @@ function Body() {
           </div>
         </div>
       </div>
-      <div className={`Four-Block ${styles.body_four_block}`}>
+      <div className={`Four-Block ${styles.body_four_block}`} id="ContactUs">
         <div className={`Four-Block-Text ${styles.body_four_block_text}`}>
           <div>
-            <h1
-              style={{
-                fontSize: '16px',
-                paddingLeft: '12px',
-              }}
-            >
-              CONTACTO 24/7
-            </h1>
+            <h1 className={`${styles.contacts}`}>CONTACTO 24/7</h1>
           </div>
           <div className={styles.div_container_p}>
             <span>

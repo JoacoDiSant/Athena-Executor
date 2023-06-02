@@ -17,7 +17,7 @@ function App() {
   return (
     <div className={styles.main}>
       <div className={`Header ${styles.header}`}>
-        <div className={`Header/Navbar ${styles.Header_Nav}`}>
+        <div className="Header/Navbar">
           <div className="NavBar">
             <div className="containerIcon">
               <div

@@ -14,16 +14,6 @@ function MobileMenu({ open, setOpen }: Props) {
   };
 
   const containerStyle: React.CSSProperties = {
-    // position: 'relative',
-    // padding: 48,
-    // overflow: 'hidden',
-    // textAlign: 'center',
-    // background: 'transparent',
-    // top: '13vw',
-    // left: '-466.4px',
-    // width: '100vw',
-    // height: '100vh',
-    // border: 'none',
     visibility: open ? 'visible' : 'hidden',
   };
 
@@ -51,12 +41,12 @@ function MobileMenu({ open, setOpen }: Props) {
           width="45%"
         >
           <div className={styles.actions}>
-            <a className={styles.actions_fonts} href="#Home" onClick={onClose}>
+            <a className={styles.actions_fonts} href="#home" onClick={onClose}>
               Inicio
             </a>
             <a
               className={styles.actions_fonts}
-              href="#Services"
+              href="Services"
               onClick={onClose}
             >
               Servicios
@@ -75,7 +65,7 @@ function MobileMenu({ open, setOpen }: Props) {
             >
               Contacto
             </a>
-            <p>+ 54 9 223 4476914</p>
+            <p className={styles.actions_fonts}>+ 54 9 223 4476914</p>
           </div>
         </Drawer>
       </div>
