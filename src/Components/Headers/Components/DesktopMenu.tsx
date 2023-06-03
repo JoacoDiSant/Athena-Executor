@@ -10,7 +10,7 @@ function DesktopMenu() {
       </div>
 
       <div className={styles.actions}>
-        <a className={styles.actions_fonts} href="#Home">
+        <a className={styles.actions_fonts} href="#home">
           Inicio
         </a>
         <a className={styles.actions_fonts} href="#Services">
@@ -22,9 +22,7 @@ function DesktopMenu() {
         <a className={styles.actions_fonts} href="#ContactUs">
           Contacto
         </a>
-        <div className={styles.header_container_body}>
-          <p>+ 54 9 223 4476914</p>
-        </div>
+        <p>+ 54 9 223 4476914</p>
       </div>
     </div>
   );

@@ -1,9 +1,9 @@
 .body_first_block {
   background: url('../images/DoorCheck.jpg') no-repeat content-box;
-  background-position-x: 50%;
-  background-size: 160%;
-  height: 35vh;
+  background-size: cover;
+  height: 60vh;
   display: flex;
+  align-items: center;
   margin-bottom: 100px;
   margin-top: 20px;
 }
@@ -11,9 +11,9 @@
 .body_fisrt_block_text {
   margin-top: 10vh;
   margin-left: 5vw;
-  height: 10vh;
-  font-size: 1.5vh;
-  line-height: 2.2;
+  height: 35vh;
+  font-size: 5.3vh;
+  line-height: 1.5;
   color: black;
   animation: FontAnim 2.5s ease 0s 1 normal forwards;
   font-family: 'Agrandir-Wide';
@@ -21,7 +21,7 @@
 
 .span {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 55px;
   color: black;
 }
 
@@ -38,7 +38,7 @@
   background-color: rgb(0 0 0 / 80%);
   color: white;
   width: 100%;
-  height: 43vh;
+  height: 55vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -61,10 +61,16 @@
 .body_second_text,
 .body_third_text {
   display: flex;
-  column-gap: 20px;
+  justify-content: center;
+  column-gap: 70px;
   align-items: center;
   padding: 11px;
   font-family: 'Agrandir-Wide';
+}
+
+.body_second_text {
+  column-gap: 70px;
+  padding: 60px;
 }
 
 .image1 {
@@ -74,6 +80,7 @@
   display: block;
   border-radius: 100px;
   background-size: contain;
+  transform: scale(1.5);
 }
 
 .image2 {
@@ -83,6 +90,7 @@
   display: block;
   border-radius: 100px;
   background-size: contain;
+  transform: scale(1.5);
 }
 
 .image3 {
@@ -92,6 +100,7 @@
   display: block;
   border-radius: 100px;
   background-size: contain;
+  transform: scale(1.5);
 }
 
 .textLi {
@@ -168,12 +177,27 @@
   font-size: 30px;
 }
 
-.title {
+.title,
+.title_service {
   font-weight: bolder;
 }
 
+.title_service {
+  font-size: 50px;
+  text-align: center;
+}
+
 /* Mobil S */
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 767px) {
+  .body_first_block {
+    background-size: 130%;
+    background-position-x: 50%;
+    background-position-y: 50px;
+    height: 35vh;
+    margin-top: 0;
+    align-items: normal;
+  }
+
   .body_fisrt_block_text {
     margin-top: 12vh;
     margin-left: 6vw;
@@ -183,6 +207,23 @@
     animation: Body_FontAnim__iITgh 2.5s ease 0s 1 normal forwards;
     font-family: 'Agrandir-Wide';
   }
+
+  .body_second_block_text {
+    background-color: rgb(0 0 0 / 80%);
+    color: white;
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Agrandir-Wide';
+  }
+  .title_service {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
   .span {
     font-weight: 600;
     font-size: 20px;
@@ -259,7 +300,7 @@
   }
 }
 /* Mobil M */
-@media (min-width: 375px) and (max-width: 768px) {
+@media (min-width: 375px) and (max-width: 767px) {
   .body_fisrt_block_text {
     margin-top: 12vh;
     margin-left: 6vw;
@@ -269,6 +310,23 @@
     animation: Body_FontAnim__iITgh 2.5s ease 0s 1 normal forwards;
     font-family: 'Agrandir-Wide';
   }
+
+  .body_second_block_text {
+    background-color: rgb(0 0 0 / 80%);
+    color: white;
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Agrandir-Wide';
+  }
+  .title_service {
+    text-align: center;
+    font-size: 23px;
+    margin-bottom: 20px;
+  }
+
   .span {
     font-weight: 600;
     font-size: 20px;
@@ -355,6 +413,22 @@
     animation: Body_FontAnim__iITgh 2.5s ease 0s 1 normal forwards;
     font-family: 'Agrandir-Wide';
   }
+
+  .body_second_block_text {
+    background-color: rgb(0 0 0 / 80%);
+    color: white;
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Agrandir-Wide';
+  }
+  .title_service {
+    text-align: center;
+    font-size: 30px;
+  }
+
   .span {
     font-weight: 600;
     font-size: 20px;
@@ -441,9 +515,128 @@
     animation: Body_FontAnim__iITgh 2.5s ease 0s 1 normal forwards;
     font-family: 'Agrandir-Wide';
   }
+
+  .body_second_block_text {
+    background-color: rgb(0 0 0 / 80%);
+    color: white;
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Agrandir-Wide';
+  }
+  .title_service {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
   .span {
     font-weight: 600;
     font-size: 32px;
+  }
+
+  .ant-btn {
+    font-size: 25px;
+    height: 43px;
+    padding: 4px 15px;
+    border-radius: 6px;
+  }
+
+  .body_second_block_text {
+    padding: 70px;
+  }
+
+  .image1 {
+    background: url(/_next/static/media/keyLocker.53d47281.jpg) no-repeat;
+    width: 130px;
+    height: 120px;
+    display: block;
+    border-radius: 100px;
+    background-size: contain;
+    background-color: white;
+  }
+  .image2 {
+    background: url('../images/Locker.jpg') no-repeat;
+    width: 120px;
+    height: 120px;
+    display: block;
+    border-radius: 100px;
+    background-size: contain;
+    background-position-x: -3px;
+    background-color: #ead975;
+  }
+
+  .image3 {
+    background: url('../images/Locker2.jpg') no-repeat;
+    width: 150px;
+    height: 120px;
+    display: block;
+    border-radius: 100px;
+    background-size: contain;
+    background-position-y: 0px;
+    background-color: #3580d1;
+    background-position-x: -1px;
+  }
+
+  .body_first_text,
+  .body_second_text,
+  .body_third_text {
+    display: flex;
+    column-gap: 40px;
+    align-items: center;
+    padding: 8px;
+    font-family: 'Agrandir-Wide';
+  }
+
+  .textLi {
+    font-size: 16px;
+    font-family: 'Agrandir-Wide';
+  }
+
+  .whoWeAre {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .whoWeAreText {
+    font-size: 17px;
+  }
+
+  .contacts {
+    font-size: 30px;
+    padding-right: 80px;
+  }
+
+  .div_container_p {
+    font-size: 5px;
+    line-height: 1;
+    text-align: end;
+    padding: 12px;
+  }
+  .p {
+    font-size: 18px;
+  }
+  .body_four_block_text {
+    justify-content: center;
+  }
+}
+/* Laptop   */
+@media (min-width: 1120px) and (max-width: 1439px) {
+  .body_fisrt_block_text {
+    margin-top: 12vh;
+    margin-left: 6vw;
+    font-size: 30px;
+    line-height: 1.8;
+    color: black;
+    animation: Body_FontAnim__iITgh 2.5s ease 0s 1 normal forwards;
+    font-family: 'Agrandir-Wide';
+  }
+  .span {
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 20px;
   }
 
   .ant-btn {

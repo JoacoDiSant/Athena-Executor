@@ -27,7 +27,7 @@ function Body() {
                 backgroundColor: '#ffe408',
                 color: '#000000',
                 fontFamily: 'Agrandir-Wide',
-                width: isTablet ? '70%' : '160px',
+                width: isTablet ? '50%' : '160px',
                 fontSize: isTablet ? '20px' : '15px',
               }}
             >
@@ -43,7 +43,8 @@ function Body() {
         </div>
       </div>
       <div className={`Second-Block ${styles.body_second_block}`} id="Services">
-        <div className={`First-Text ${styles.body_second_block_text}`}>
+        <div className={`Second-Text ${styles.body_second_block_text}`}>
+          <span className={styles.title_service}>SERVICIOS</span>
           <div className={`Second Text ${styles.body_first_text}`}>
             <span className={styles.image1} />
             <div className={styles.textLi}>
