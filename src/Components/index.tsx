@@ -1,5 +1,6 @@
 import React from 'react';
 import { Layout } from 'antd';
+import dynamic from 'next/dynamic';
 
 import styles from '../styles/Home.module.css';
 import Headers from './Headers';
@@ -38,4 +39,4 @@ function App() {
   );
 }
 
-export default App;
+export default dynamic(() => Promise.resolve(App), { ssr: false });

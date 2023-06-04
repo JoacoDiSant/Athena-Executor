@@ -38,39 +38,29 @@
   background-color: rgb(0 0 0 / 80%);
   color: white;
   width: 100%;
-  height: 55vh;
+  height: 65vh;
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   font-family: 'Agrandir-Wide';
-}
-
-@keyframes FontAnim {
-  0% {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
 }
 
 .body_first_text,
 .body_second_text,
 .body_third_text {
   display: flex;
-  justify-content: center;
   column-gap: 70px;
   align-items: center;
   padding: 11px;
+  margin-left: 650px;
   font-family: 'Agrandir-Wide';
 }
 
 .body_second_text {
+  justify-content: unset;
   column-gap: 70px;
   padding: 60px;
+  padding-left: 12px;
 }
 
 .image1 {
@@ -80,7 +70,7 @@
   display: block;
   border-radius: 100px;
   background-size: contain;
-  transform: scale(1.5);
+  transform: scale(2);
 }
 
 .image2 {
@@ -90,7 +80,7 @@
   display: block;
   border-radius: 100px;
   background-size: contain;
-  transform: scale(1.5);
+  transform: scale(2);
 }
 
 .image3 {
@@ -100,11 +90,11 @@
   display: block;
   border-radius: 100px;
   background-size: contain;
-  transform: scale(1.5);
+  transform: scale(2);
 }
 
 .textLi {
-  font-size: 12px;
+  font-size: 20px;
   font-family: 'Agrandir-Wide';
 }
 
@@ -112,7 +102,7 @@
   background: url('../images/BGQUIENSOY.jpg') no-repeat content-box;
   background-position: center;
   background-size: cover;
-  height: 42vh;
+  height: 60vh;
   display: flex;
   margin-bottom: 100px;
 }
@@ -138,16 +128,17 @@
   background-position: center;
   background-size: cover;
   margin-bottom: 100px;
-  height: 30vh;
+  height: 50vh;
 }
 
 .body_four_block_text {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   color: white;
   font-family: 'Agrandir-Wide';
-  height: 30vh;
+  height: 50vh;
+  background-color: rgb(0 0 0 /70%);
 }
 
 .div_container_p {
@@ -155,22 +146,26 @@
   line-height: 1.3;
   text-align: end;
   padding: 15px;
+  margin-left: 42rem;
 }
 
 .p {
-  font-size: 12px;
+  font-size: 30px;
 }
 
 .whoWeAre {
-  font-size: 30px;
+  font-size: 50px;
 }
 
 .whoWeAreText {
-  font-size: 12px;
+  font-size: 30px;
 }
 
 .contacts {
-  font-size: 30px;
+  font-size: 60px;
+  word-break: break-word;
+  width: 31rem;
+  text-align: center;
 }
 
 .h1 {
@@ -236,6 +231,7 @@
     display: block;
     border-radius: 100px;
     background-size: contain;
+    transform: scale(1);
     background-color: white;
   }
   .image2 {
@@ -245,6 +241,7 @@
     display: block;
     border-radius: 100px;
     background-size: contain;
+    transform: scale(1);
     background-position-x: -3px;
     background-color: #ead975;
   }
@@ -256,6 +253,7 @@
     display: block;
     border-radius: 100px;
     background-size: contain;
+    transform: scale(1);
     background-position-y: 0px;
     background-color: #3580d1;
     background-position-x: -1px;
@@ -269,6 +267,7 @@
     align-items: center;
     padding: 10px;
     font-family: 'Agrandir-Wide';
+    margin-left: 0;
   }
 
   .textLi {
@@ -287,16 +286,25 @@
   .contacts {
     font-size: 12px;
     padding-left: 10px;
+    width: 180%;
   }
 
   .div_container_p {
     font-size: 8px;
     line-height: 1.3;
     text-align: end;
-    padding: 5.5px;
+    padding: 20px;
+    width: 570px;
+    margin-left: 0;
   }
+
   .p {
     font-size: 9.8px;
+  }
+
+  .body_four_block_text,
+  .body_four_block {
+    height: 35vh;
   }
 }
 /* Mobil M */
@@ -339,6 +347,7 @@
     display: block;
     border-radius: 100px;
     background-size: contain;
+    transform: scale(1);
     background-color: white;
   }
   .image2 {
@@ -348,6 +357,7 @@
     display: block;
     border-radius: 100px;
     background-size: contain;
+    transform: scale(1);
     background-position-x: -3px;
     background-color: #ead975;
   }
@@ -359,6 +369,7 @@
     display: block;
     border-radius: 100px;
     background-size: contain;
+    transform: scale(1);
     background-position-y: 0px;
     background-color: #3580d1;
     background-position-x: -1px;
@@ -372,6 +383,7 @@
     align-items: center;
     padding: 10px;
     font-family: 'Agrandir-Wide';
+    margin-left: 0;
   }
 
   .textLi {
@@ -390,6 +402,7 @@
   .contacts {
     font-size: 15px;
     padding-left: 10px;
+    width: 150%;
   }
 
   .div_container_p {
@@ -397,9 +410,17 @@
     line-height: 1.3;
     text-align: end;
     padding: 5.5px;
+    width: 570px;
+    margin-left: 0;
   }
+
   .p {
     font-size: 11px;
+  }
+
+  .body_four_block_text,
+  .body_four_block {
+    height: 35vh;
   }
 }
 /* Mobil L */
@@ -441,6 +462,7 @@
     display: block;
     border-radius: 100px;
     background-size: contain;
+    transform: scale(1);
     background-color: white;
   }
   .image2 {
@@ -450,6 +472,7 @@
     display: block;
     border-radius: 100px;
     background-size: contain;
+    transform: scale(1);
     background-position-x: -3px;
     background-color: #ead975;
   }
@@ -461,6 +484,7 @@
     display: block;
     border-radius: 100px;
     background-size: contain;
+    transform: scale(1);
     background-position-y: 0px;
     background-color: #3580d1;
     background-position-x: -1px;
@@ -474,6 +498,7 @@
     align-items: center;
     padding: 8px;
     font-family: 'Agrandir-Wide';
+    margin-left: 0;
   }
 
   .textLi {
@@ -492,6 +517,7 @@
   .contacts {
     font-size: 19px;
     padding-left: 10px;
+    width: 150%;
   }
 
   .div_container_p {
@@ -499,13 +525,21 @@
     line-height: 1.2;
     text-align: end;
     padding: 12px;
+    width: 570px;
+    margin-left: 0;
   }
+
   .p {
     font-size: 12px;
   }
+
+  .body_four_block_text,
+  .body_four_block {
+    height: 35vh;
+  }
 }
 /* Tablet  */
-@media (min-width: 701px) and (max-width: 1120px) {
+@media (min-width: 701px) and (max-width: 1020px) {
   .body_fisrt_block_text {
     margin-top: 12vh;
     margin-left: 6vw;
@@ -555,6 +589,7 @@
     display: block;
     border-radius: 100px;
     background-size: contain;
+    transform: scale(1);
     background-color: white;
   }
   .image2 {
@@ -564,6 +599,7 @@
     display: block;
     border-radius: 100px;
     background-size: contain;
+    transform: scale(1);
     background-position-x: -3px;
     background-color: #ead975;
   }
@@ -575,6 +611,7 @@
     display: block;
     border-radius: 100px;
     background-size: contain;
+    transform: scale(1);
     background-position-y: 0px;
     background-color: #3580d1;
     background-position-x: -1px;
@@ -587,6 +624,7 @@
     column-gap: 40px;
     align-items: center;
     padding: 8px;
+    margin-left: 0;
     font-family: 'Agrandir-Wide';
   }
 
@@ -606,7 +644,8 @@
 
   .contacts {
     font-size: 30px;
-    padding-right: 80px;
+    padding-left: 0;
+    width: 97%;
   }
 
   .div_container_p {
@@ -614,16 +653,20 @@
     line-height: 1;
     text-align: end;
     padding: 12px;
+    width: 570px;
+    margin-left: 0;
   }
+
   .p {
     font-size: 18px;
   }
+
   .body_four_block_text {
     justify-content: center;
   }
 }
 /* Laptop   */
-@media (min-width: 1120px) and (max-width: 1439px) {
+@media (min-width: 1020px) and (max-width: 1439px) {
   .body_fisrt_block_text {
     margin-top: 12vh;
     margin-left: 6vw;
@@ -648,35 +691,29 @@
 
   .body_second_block_text {
     padding: 70px;
+    height: 60vh;
+    padding-top: 50px;
   }
 
   .image1 {
-    background: url(/_next/static/media/keyLocker.53d47281.jpg) no-repeat;
-    width: 130px;
-    height: 120px;
-    display: block;
-    border-radius: 100px;
-    background-size: contain;
+    width: 90px;
+    height: 90px;
+    transform: scale(1);
     background-color: white;
   }
+
   .image2 {
-    background: url('../images/Locker.jpg') no-repeat;
-    width: 120px;
-    height: 120px;
-    display: block;
-    border-radius: 100px;
-    background-size: contain;
+    width: 90px;
+    height: 90px;
+    transform: scale(1);
     background-position-x: -3px;
     background-color: #ead975;
   }
 
   .image3 {
-    background: url('../images/Locker2.jpg') no-repeat;
-    width: 150px;
-    height: 120px;
-    display: block;
-    border-radius: 100px;
-    background-size: contain;
+    width: 90px;
+    height: 90px;
+    transform: scale(1);
     background-position-y: 0px;
     background-color: #3580d1;
     background-position-x: -1px;
@@ -689,6 +726,7 @@
     column-gap: 40px;
     align-items: center;
     padding: 8px;
+    margin-left: 150px;
     font-family: 'Agrandir-Wide';
   }
 
@@ -698,7 +736,7 @@
   }
 
   .whoWeAre {
-    font-size: 55px;
+    font-size: 40px;
   }
 
   .whoWeAreText {
@@ -708,6 +746,12 @@
   .contacts {
     font-size: 30px;
     padding-left: 0;
+    width: 97%;
+  }
+
+  .body_four_block_text,
+  .body_four_block {
+    height: 40vh;
   }
 
   .div_container_p {
@@ -715,11 +759,56 @@
     line-height: 1.2;
     text-align: end;
     padding: 12px;
+    width: 570px;
+    margin-left: 0;
   }
+
   .p {
-    font-size: 22px;
+    font-size: 17px;
   }
+
   .body_four_block_text {
     justify-content: center;
+  }
+}
+/* Laptop L */
+@media (min-width: 1439px) and (max-width: 1900px) {
+  .body_second_block_text {
+    height: 77vh;
+  }
+
+  .body_first_text,
+  .body_second_text,
+  .body_third_text {
+    margin-left: 400px;
+  }
+
+  .whoWeAreText {
+    font-size: 25px;
+  }
+
+  .contacts {
+    font-size: 40px;
+    width: 21rem;
+  }
+
+  .p {
+    font-size: 20px;
+  }
+
+  .div_container_p {
+    margin-left: 0;
+  }
+}
+
+@keyframes FontAnim {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }

@@ -1,32 +1,29 @@
 .footer_container {
   font-family: 'Agrandir-Wide';
-  background-color: rgb(0 0 0 / 20%);
+  background-color: rgb(0 0 0 /70%);
   color: white;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 30px;
   padding-bottom: 0px;
+  height: 50vh;
+  align-items: center;
 }
 
 .title {
-  font-size: 28px;
+  font-size: 50px;
   padding-bottom: 51px;
-  text-align: center;
+  text-align: start;
+  word-break: break-word;
+  width: 30%;
 }
 
-/* Tablet  */
-@media (min-width: 701px) and (max-width: 1120px) {
+/* Mobil S */
+@media (min-width: 320px) and (max-width: 767px) {
   .footer_container {
-    font-family: 'Agrandir-Wide';
-    background-color: rgb(0 0 0 / 20%);
-    color: white;
-    display: flex;
-    flex-direction: row;
     justify-content: space-around;
-    padding: 30px;
-    padding-bottom: 0px;
     align-items: center;
+    flex-direction: column;
   }
 
   .title {
@@ -35,5 +32,83 @@
     text-align: center;
     word-break: break-word;
     width: 100%;
+  }
+}
+/* Mobil M */
+@media (min-width: 375px) and (max-width: 767px) {
+  .footer_container {
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 30px;
+    padding-bottom: 0;
+    text-align: center;
+    word-break: break-word;
+    width: 100%;
+  }
+}
+/* Mobil L */
+@media (min-width: 425px) and (max-width: 768px) {
+  .footer_container {
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 30px;
+    padding-bottom: 0;
+    text-align: center;
+    word-break: break-word;
+    width: 100%;
+  }
+}
+/* Tablet  */
+@media (min-width: 701px) and (max-width: 1120px) {
+  .footer_container {
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .title {
+    font-size: 30px;
+    padding-bottom: 0;
+    text-align: start;
+    word-break: break-word;
+    width: 100%;
+  }
+}
+/* Laptop   */
+@media (min-width: 1020px) and (max-width: 1439px) {
+  .footer_container {
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 30px;
+    padding-bottom: 0;
+    text-align: start;
+    word-break: break-word;
+    width: 100%;
+  }
+}
+/* Laptop L */
+@media (min-width: 1439px) and (max-width: 1900px) {
+  .footer_container {
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 30px;
+    padding-bottom: 0;
+    text-align: start;
+    word-break: break-word;
+    width: 30%;
   }
 }

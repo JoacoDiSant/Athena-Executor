@@ -1,8 +1,8 @@
 .main {
   width: 100vw;
   background: url('../images/Logo.png') no-repeat;
-  background-size: 70%;
-  background-position-y: 40%;
+  background-size: 20%;
+  background-position-y: 92%;
   background-position-x: 50%;
   background-attachment: fixed;
   background-color: #ffe408;
@@ -10,6 +10,7 @@
 
 .footer {
   background: url('../images/FooterBG.jpg');
+  height: 50vh;
 }
 
 @keyframes rotate {
@@ -18,5 +19,48 @@
   }
   to {
     transform: rotate(0deg);
+  }
+}
+
+/* Mobil S */
+@media (min-width: 320px) and (max-width: 767px) {
+  .main {
+    background-size: 73%;
+    background-position-y: 44%;
+  }
+}
+/* Mobil M */
+@media (min-width: 375px) and (max-width: 767px) {
+  .main {
+    background-size: 52%;
+    background-position-y: 43%;
+  }
+}
+/* Mobil L */
+@media (min-width: 425px) and (max-width: 768px) {
+  .main {
+    background-size: 63%;
+    background-position-y: 45%;
+  }
+}
+/* Tablet  */
+@media (min-width: 701px) and (max-width: 1020px) {
+  .main {
+    background-size: 38%;
+    background-position-y: 92%;
+  }
+}
+/* Laptop   */
+@media (min-width: 1020px) and (max-width: 1439px) {
+  .main {
+    background-size: 33%;
+    background-position-y: 100%;
+  }
+}
+/* Laptop L */
+@media (min-width: 1439px) and (max-width: 1900px) {
+  .main {
+    background-size: 20%;
+    background-position-y: 85%;
   }
 }

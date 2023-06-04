@@ -2,7 +2,6 @@
 import React from 'react';
 import { Form, Input, Button, Alert, Space } from 'antd';
 import emailjs from '@emailjs/browser';
-import { useMediaQuery } from 'react-responsive';
 
 import styles from '../../styles/Footer.module.css';
 
@@ -16,8 +15,6 @@ interface IForm {
 function Footer() {
   const [form] = Form.useForm();
   const [onSuccess, setOnSuccess] = React.useState(false);
-
-  const tableScreen = useMediaQuery({ query: '(min-width: 768px)' });
 
   const publicKey = process.env.NEXT_PUBLIC_PUBLICK_KEY as string;
   const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID as string;
@@ -57,7 +54,7 @@ function Footer() {
         style={{
           maxWidth: 600,
           color: 'white',
-          width: tableScreen ? '50%' : '100%',
+          width: '100%',
         }}
       >
         <Form.Item name="name" rules={[{ required: true }]}>
