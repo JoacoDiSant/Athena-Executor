@@ -22,6 +22,7 @@ function Body() {
             }}
           >
             <Button
+              href="tel:+5492234476914"
               size={isTablet ? 'large' : 'middle'}
               style={{
                 backgroundColor: '#ffe408',
