@@ -14,6 +14,7 @@ function Body() {
         <div className={`First-Block-Text ${styles.body_fisrt_block_text}`}>
           <p>
             URGENCIAS LAS 24 HORAS <br />
+            EN MAR DEL PLATA <br />
             <span className={styles.span}>+ 54 9 2234476914 </span>
           </p>
           <div

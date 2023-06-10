@@ -10,7 +10,6 @@
 
 .footer {
   background: url('../images/FooterBG.jpg');
-  height: 50vh;
 }
 
 @keyframes rotate {
