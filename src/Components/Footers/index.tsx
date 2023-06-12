@@ -82,7 +82,7 @@ function Footer() {
           wrapperCol={{ offset: 1, span: 1 }}
         >
           <Button htmlType="submit" type="primary">
-            Submit
+            Enviar
           </Button>
         </Form.Item>
       </Form>
