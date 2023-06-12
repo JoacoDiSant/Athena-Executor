@@ -1,6 +1,6 @@
 import React from 'react';
-import { Button } from 'antd';
-import { PhoneOutlined } from '@ant-design/icons';
+import { Button, FloatButton } from 'antd';
+import { PhoneOutlined, WhatsAppOutlined } from '@ant-design/icons';
 import { useMediaQuery } from 'react-responsive';
 
 import styles from '../../styles/Body.module.css';
@@ -54,7 +54,7 @@ function Body() {
               <li>Apertura y arreglo de puertas pentágono. </li>
               <li>Nivelación y regulación de puertas blindex. </li>
               <li>
-                Arreglo de puertas ventana de aluminio, ventanas y cortinas
+                Arreglo de puertas ventana de aluminio, ventanas y cortinas.
               </li>
               <li>Ajuste y regulación de cierra puertas de piso y aereos.</li>
             </div>
@@ -123,6 +123,12 @@ function Body() {
           </div>
         </div>
       </div>
+      <FloatButton
+        badge={{ dot: true }}
+        href="https://wa.me/5492234476914"
+        icon={<WhatsAppOutlined />}
+        tooltip={<div> Hablanos por WhatsApp </div>}
+      />
     </div>
   );
 }

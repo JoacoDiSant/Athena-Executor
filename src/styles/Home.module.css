@@ -1,11 +1,12 @@
 .main {
   width: 100vw;
-  background: url('../images/Logo.png') no-repeat;
+  background: url('../images/r_page-0001.jpg') no-repeat;
   background-size: 20%;
   background-position-y: 92%;
   background-position-x: 50%;
   background-attachment: fixed;
   background-color: #ffe408;
+  position: absolute;
 }
 
 .footer {
