@@ -74,15 +74,14 @@ function Footer() {
           <Input.TextArea placeholder="Mensaje" />
         </Form.Item>
 
-        <Form.Item wrapperCol={{ offset: 1, span: 1 }}>
-          <Button
-            htmlType="submit"
-            style={{
-              display: 'flex',
-              justifyContent: 'center',
-            }}
-            type="primary"
-          >
+        <Form.Item
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+          }}
+          wrapperCol={{ offset: 1, span: 1 }}
+        >
+          <Button htmlType="submit" type="primary">
             Submit
           </Button>
         </Form.Item>
