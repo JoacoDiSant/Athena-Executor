@@ -26,10 +26,11 @@ function Footer() {
         serviceId,
         templeteId,
         {
+          // reymendezseguridad@gmail.com
           // eslint-disable-next-line @typescript-eslint/ban-ts-comment
           // @ts-ignore
           from_name: e.name,
-          to_name: 'Joaquin', // TODO: CAMBIAR POR EL NOMBRE DE LA EMPRESA y por el mail reymendezseguridad@gmail.com
+          to_name: 'Reymendez Seguridad',
           from_email: e.email,
           from_issue: e.issue,
           message: e.text,
@@ -73,8 +74,15 @@ function Footer() {
           <Input.TextArea placeholder="Mensaje" />
         </Form.Item>
 
-        <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
-          <Button htmlType="submit" type="primary">
+        <Form.Item wrapperCol={{ offset: 1, span: 1 }}>
+          <Button
+            htmlType="submit"
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+            }}
+            type="primary"
+          >
             Submit
           </Button>
         </Form.Item>

@@ -127,6 +127,10 @@ function Body() {
         badge={{ dot: true }}
         href="https://wa.me/5492234476914"
         icon={<WhatsAppOutlined />}
+        style={{
+          right: '8px',
+          bottom: '10px',
+        }}
         tooltip={<div> Hablanos por WhatsApp </div>}
       />
     </div>

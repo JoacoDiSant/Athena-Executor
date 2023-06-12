@@ -22,7 +22,12 @@ function DesktopMenu() {
         <a className={styles.actions_fonts} href="#ContactUs">
           Contacto
         </a>
-        <p>+ 54 9 223 4476914</p>
+        <a
+          className={styles.actions_fonts_contacts}
+          href="https://wa.me/5492234476914"
+        >
+          Urgencias <br /> + 54 9 223 4476914
+        </a>
       </div>
     </div>
   );

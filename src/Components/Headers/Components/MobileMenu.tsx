@@ -65,7 +65,12 @@ function MobileMenu({ open, setOpen }: Props) {
             >
               Contacto
             </a>
-            <p className={styles.actions_fonts}>+ 54 9 223 4476914</p>
+            <a
+              className={styles.actions_fonts}
+              href="https://wa.me/5492234476914"
+            >
+              Urgencias <br /> + 54 9 223 4476914
+            </a>
           </div>
         </Drawer>
       </div>

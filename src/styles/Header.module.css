@@ -33,6 +33,13 @@
   width: 100%;
 }
 
+.actions_fonts_contacts {
+  line-height: 21px;
+  color: black;
+  margin-bottom: 18px;
+  font-weight: 400;
+}
+
 .actions_fonts {
   color: black;
   margin-top: 20px;
