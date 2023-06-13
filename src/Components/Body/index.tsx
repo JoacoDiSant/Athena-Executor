@@ -4,6 +4,7 @@ import { PhoneOutlined, WhatsAppOutlined } from '@ant-design/icons';
 import { useMediaQuery } from 'react-responsive';
 
 import styles from '../../styles/Body.module.css';
+import '..';
 
 function Body() {
   const isTablet = useMediaQuery({ query: '(min-width: 768px)' });
@@ -125,10 +126,18 @@ function Body() {
       <FloatButton
         badge={{ dot: true }}
         href="https://wa.me/5492234476914"
-        icon={<WhatsAppOutlined />}
+        icon={
+          <WhatsAppOutlined
+            style={{
+              transform: 'scale(1.5)',
+            }}
+          />
+        }
         style={{
-          right: '8px',
-          bottom: '10px',
+          right: ' 8px',
+          bottom: ' 10px',
+          width: ' 70px',
+          height: ' 70px',
         }}
         tooltip={<div> Hablanos por WhatsApp </div>}
       />

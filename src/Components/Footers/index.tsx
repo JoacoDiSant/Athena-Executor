@@ -26,9 +26,6 @@ function Footer() {
         serviceId,
         templeteId,
         {
-          // reymendezseguridad@gmail.com
-          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-          // @ts-ignore
           from_name: e.name,
           to_name: 'Reymendez Seguridad',
           from_email: e.email,
