@@ -4,8 +4,8 @@ import dynamic from 'next/dynamic';
 
 import styles from '../styles/Home.module.css';
 import Headers from './Headers';
-import Body from './Body';
 import Footer from './Footers';
+import Body from './Body';
 
 const { Header } = Layout;
 

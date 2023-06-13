@@ -4,7 +4,6 @@ import { PhoneOutlined, WhatsAppOutlined } from '@ant-design/icons';
 import { useMediaQuery } from 'react-responsive';
 
 import styles from '../../styles/Body.module.css';
-import '..';
 
 function Body() {
   const isTablet = useMediaQuery({ query: '(min-width: 768px)' });
