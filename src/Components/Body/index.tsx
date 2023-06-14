@@ -33,6 +33,7 @@ function Body() {
                 width: isTablet ? '50%' : '160px',
                 fontSize: isTablet ? '20px' : '15px',
                 height: 'auto',
+                textDecoration: 'none',
               }}
             >
               <div
@@ -51,8 +52,11 @@ function Body() {
                     }}
                   />
                 </div>
-                Urgencias <br />
-                LLamar ahora
+                <div>
+                  <span>Urgencias</span>
+                  <br />
+                  <span>LLamar ahora</span>
+                </div>
               </div>
             </Button>
           </div>

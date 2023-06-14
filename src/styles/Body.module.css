@@ -215,7 +215,7 @@
   .body_fisrt_block_text {
     margin-top: 12vh;
     margin-left: 6vw;
-    font-size: 11.5px;
+    font-size: 15px;
     line-height: 1.8;
     color: black;
     font-family: 'Agrandir-Wide';
@@ -330,7 +330,7 @@
   .body_fisrt_block_text {
     margin-top: 12vh;
     margin-left: 6vw;
-    font-size: 11.5px;
+    font-size: 15px;
     line-height: 1.8;
     color: black;
     font-family: 'Agrandir-Wide';
@@ -348,13 +348,13 @@
   }
   .title_service {
     text-align: center;
-    font-size: 23px;
-    margin-bottom: 20px;
+    font-size: 20px;
+    margin-bottom: 10px;
   }
 
   .span {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .image1 {
@@ -446,7 +446,7 @@
   .body_fisrt_block_text {
     margin-top: 12vh;
     margin-left: 6vw;
-    font-size: 11.5px;
+    font-size: 15px;
     line-height: 1.8;
     color: black;
     font-family: 'Agrandir-Wide';
@@ -464,12 +464,13 @@
   }
   .title_service {
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
+    margin-bottom: 10px;
   }
 
   .span {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .image1 {
