@@ -17,12 +17,16 @@
   color: black;
   animation: FontAnim 2.5s ease 0s 1 normal forwards;
   font-family: 'Agrandir-Wide';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .span {
   font-weight: 600;
   font-size: 55px;
   color: black;
+  text-decoration: none;
 }
 
 .body_second_block {
@@ -203,7 +207,7 @@
     background-size: 130%;
     background-position-x: 50%;
     background-position-y: 50px;
-    height: 35vh;
+    height: 50vh;
     margin-top: 0;
     align-items: normal;
   }
@@ -235,7 +239,7 @@
 
   .span {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .image1 {

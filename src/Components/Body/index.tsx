@@ -14,7 +14,9 @@ function Body() {
         <div className={`First-Block-Text ${styles.body_fisrt_block_text}`}>
           <p>
             CERRAJERIA <br /> LAS 24 HORAS EN MAR DEL PLATA <br />
-            <span className={styles.span}>+ 54 9 2234476914 </span>
+            <a className={styles.span} href="tel:+5492234476914">
+              + 54 9 2234476914{' '}
+            </a>
           </p>
           <div
             style={{
@@ -30,15 +32,28 @@ function Body() {
                 fontFamily: 'Agrandir-Wide',
                 width: isTablet ? '50%' : '160px',
                 fontSize: isTablet ? '20px' : '15px',
+                height: 'auto',
               }}
             >
-              <PhoneOutlined
+              <div
                 style={{
-                  transform: 'rotate(90deg)',
-                  marginRight: '15px',
+                  display: 'flex',
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  justifyContent: 'space-evenly',
                 }}
-              />
-              Llamar ahora
+              >
+                <div>
+                  <PhoneOutlined
+                    style={{
+                      transform: 'rotate(90deg)',
+                      marginRight: '15px',
+                    }}
+                  />
+                </div>
+                Urgencias <br />
+                LLamar ahora
+              </div>
             </Button>
           </div>
         </div>
