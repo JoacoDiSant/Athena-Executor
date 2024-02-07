@@ -15,7 +15,6 @@ export default function Home() {
           name="description"
         />
         <meta content="index" name="robots" />
-        <script src="/static/script.js" type="text/javascript" />
       </Head>
       <main>
         <App />
