@@ -24,6 +24,7 @@ function App() {
           zIndex: 1,
           position: 'fixed',
           width: '100%',
+          height: '90px',
           top: 0,
         }}
       >
