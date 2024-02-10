@@ -155,7 +155,6 @@ function Body() {
             <WhatsAppOutlined
               style={{
                 transform: 'scale(1.5)',
-                color: 'black',
               }}
             />
           }
