@@ -13,19 +13,16 @@ export default function Home() {
         </title>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta
-          property="description"
+          name="description"
           content="Cerrajero de Urgencias a Domicilio las 24hs en Mar del Plata. TEL y WHATSAPP: 223 447 6914"
         />
-        <meta property="og:site_name" content="Rey Mendez Seguridad" />
+        <meta name="og:site_name" content="Rey Mendez Seguridad" />
         <meta
-          property="og:description"
+          name="og:description"
           content="Cerrajero de Urgencias a Domicilio las 24hs en Mar del Plata. TEL y WHATSAPP: 223 447 6914."
         />
-        <meta property="og:url" content="https://reymendezseguridad.com/" />
-        <meta
-          property="og:title"
-          content="Reparación de cerraduras a domicilio"
-        />
+        <meta name="og:url" content="https://reymendezseguridad.com/" />
+        <meta name="og:title" content="Reparación de cerraduras a domicilio" />
         <meta content="index" name="robots" />
       </Head>
       <main>
