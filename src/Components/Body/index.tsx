@@ -67,6 +67,7 @@ function Body() {
           <div className={`Second Text ${styles.body_first_text}`}>
             <span className={styles.image1} />
             <div className={styles.textLi}>
+              <li>Cerrajero 24 horas.</li>
               <li>Reparación de cerraduras a domicilio.</li>
               <li>Blindamos puertas en 12 horas.</li>
               <li>Apertura y arreglo de puertas pentágono. </li>
