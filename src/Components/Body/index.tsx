@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, FloatButton } from 'antd';
+import { Button, ConfigProvider, FloatButton } from 'antd';
 import { PhoneOutlined, WhatsAppOutlined } from '@ant-design/icons';
 import { useMediaQuery } from 'react-responsive';
 
@@ -67,6 +67,8 @@ function Body() {
           <div className={`Second Text ${styles.body_first_text}`}>
             <span className={styles.image1} />
             <div className={styles.textLi}>
+              <li>Cerrajero 24 horas.</li>
+              <li>Reparación de cerraduras a domicilio.</li>
               <li>Blindamos puertas en 12 horas.</li>
               <li>Apertura y arreglo de puertas pentágono. </li>
               <li>Nivelación y regulación de puertas blindex. </li>
@@ -140,24 +142,33 @@ function Body() {
           </div>
         </div>
       </div>
-      <FloatButton
-        badge={{ dot: true }}
-        href="https://wa.me/5492234476914"
-        icon={
-          <WhatsAppOutlined
-            style={{
-              transform: 'scale(1.5)',
-            }}
-          />
-        }
-        style={{
-          right: ' 8px',
-          bottom: ' 10px',
-          width: ' 70px',
-          height: ' 70px',
+      <ConfigProvider
+        theme={{
+          token: {
+            colorPrimary: 'rgb(37, 211, 102)',
+          },
         }}
-        tooltip={<div> Hablanos por WhatsApp </div>}
-      />
+      >
+        <FloatButton
+          badge={{ dot: true }}
+          href="https://wa.me/5492234476914"
+          icon={
+            <WhatsAppOutlined
+              style={{
+                transform: 'scale(1.5)',
+              }}
+            />
+          }
+          style={{
+            right: ' 8px',
+            bottom: ' 10px',
+            width: ' 70px',
+            height: ' 70px',
+          }}
+          tooltip={<div> Hablanos por WhatsApp </div>}
+          type="primary"
+        />
+      </ConfigProvider>
     </div>
   );
 }
