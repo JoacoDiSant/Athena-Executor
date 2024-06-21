@@ -16,6 +16,11 @@ export default function Home() {
         />
         <meta content="index" name="robots" />
         <script src="/static/script.js" type="text/javascript" />
+        <script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-10808154807"
+          async
+        />
+        <script src="assets\index.tsx" type="text/typescript" />
       </Head>
       <main>
         <App />
