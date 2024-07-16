@@ -1,6 +1,7 @@
 /* eslint-disable max-len */
 /* eslint-disable react/jsx-sort-props */
 import Head from 'next/head';
+import Script from 'next/script';
 
 import App from '@/Components';
 
@@ -25,11 +26,19 @@ export default function Home() {
         <meta name="og:title" content="Reparación de cerraduras a domicilio" />
         <meta content="index" name="robots" />
         <script src="/static/script.js" type="text/javascript" />
-        <script
-          src="https://www.googletagmanager.com/gtag/js?id=AW-10808154807"
-          async
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-xxxxxxxxxx"
+          strategy="afterInteractive"
         />
-        <script src="assets\index.tsx" type="text/typescript" />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'AW-10808154807');
+        `}
+        </Script>
       </Head>
       <main>
         <App />
