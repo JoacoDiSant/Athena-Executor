@@ -27,7 +27,7 @@ export default function Home() {
         <meta content="index" name="robots" />
         <script src="/static/script.js" type="text/javascript" />
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-xxxxxxxxxx"
+          src="https://www.googletagmanager.com/gtag/js"
           strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">
