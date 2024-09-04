@@ -1,6 +1,10 @@
 import React from 'react';
 import { Button, ConfigProvider, FloatButton } from 'antd';
-import { PhoneOutlined, WhatsAppOutlined } from '@ant-design/icons';
+import {
+  PhoneOutlined,
+  WhatsAppOutlined,
+  PhoneFilled,
+} from '@ant-design/icons';
 import { useMediaQuery } from 'react-responsive';
 
 import styles from '../../styles/Body.module.css';
@@ -146,9 +150,28 @@ function Body() {
         theme={{
           token: {
             colorPrimary: 'rgb(37, 211, 102)',
+            colorBgBase: '#ffe408',
           },
         }}
       >
+        <FloatButton
+          badge={{ dot: false }}
+          href="tel:+5492234476914"
+          icon={
+            <PhoneFilled
+              style={{
+                transform: 'scale(1.5)',
+              }}
+            />
+          }
+          style={{
+            right: ' 8px',
+            bottom: ' 90px',
+            width: ' 70px',
+            height: ' 70px',
+          }}
+          tooltip={<div> ¡Llámanos ya! </div>}
+        />
         <FloatButton
           badge={{ dot: true }}
           href="https://wa.me/5492234476914"
